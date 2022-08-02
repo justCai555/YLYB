@@ -1,27 +1,26 @@
 <template>
     <div id="home">
-        {{test}}
-        
+        <HomeNav></HomeNav>
+        <!-- <ArticleCarousel></ArticleCarousel> -->
+        <HomeMain></HomeMain>
     </div>
 </template>
 
 <script>
-    export default{
-        data() {
-            return {
-                test: 'Hello, Home page',
-            };
-        },
-    }
+import ArticleCarousel from './homePage/ArticleCarousel .vue'
+import HomeNav from './homePage/HomeNav.vue'
+import HomeMain from './homePage/HomeMain.vue'
+export default {
+    data: () => {
+    },
+    components: { ArticleCarousel, HomeNav, HomeMain }
+}
 
 </script>
 
 <style>
     #home{
-        display: flex;
-        justify-content: space-around;
-        background-color: rgb(52, 53, 53, 0.15);
-        width: 100%;
         height: 100%;
+        width: 100%;
     }
 </style>

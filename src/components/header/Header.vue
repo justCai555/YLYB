@@ -94,7 +94,7 @@ const loginForm = reactive({
 })
 
 const login = () => {
-    axios.post('http://lcoalhost:8080/api/user/login', {
+    axios.post('http://localhost:8080/api/user/login', {
         username: loginForm.username,
         password: loginForm.password
     }).then((ret) => {
@@ -145,7 +145,7 @@ export default {
     text-align: center;
     align-items: center;
     font-size: larger;
-    height: 14%;
+    height: 10%;
     width: 100%;
     display: flex;
 }

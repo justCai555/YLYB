@@ -2,11 +2,13 @@
 import Home from "./components/pages/Home.vue";
 import Personal from './components/pages/Personal.vue'
 import Header from './components/header/Header.vue'
+import Footer from "./components/footer/Footer.vue";
 export default{
     components:{
     Home,
     Personal,
     Header,
+    Footer
 }
 }
 </script>
@@ -21,11 +23,12 @@ export default{
         <el-tab-pane label="测试" class="nav-tab-pane">Role</el-tab-pane>
         <el-tab-pane label="个人空间" class="nav-tab-pane"><Personal></Personal></el-tab-pane>
     </el-tabs>
+    <Footer></Footer>
 </template>
 
 <style>
     .nav-tabs{
-        height: 90%;
+        height: 84%;
         width: 99.5%;
         --el-tabs-header-height:60px;
     }
