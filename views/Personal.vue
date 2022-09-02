@@ -27,12 +27,8 @@
                             <el-input v-model="search" placeholder="" size="normal" clearable @change=""></el-input>
                             <el-button type="primary" plain size="default" @click="">搜索</el-button>
                         </div>
-
                     </el-col>
-
                 </el-row>
-
-
             </div>
             <div id="main_content">
                 <MainContent></MainContent>
@@ -42,7 +38,6 @@
             <div id="r_top">
                 <RightHeader></RightHeader>
             </div>
-
             <div id="r_content">
 
             </div>
@@ -50,21 +45,14 @@
     </div>
 </template>
 
-<script>
-import WriteArticle from './personalPage/WriteArticle.vue';
-import RightHeader from './personalPage/RightHeader.vue';
-import Drafts from './personalPage/Drafts.vue';
-import MainContent from './personalPage/MainContent.vue';
+<script setup>
+import WriteArticle from './pages/personal/WriteArticle.vue';
+import RightHeader from './pages/personal/RightHeader.vue';
+import Drafts from './pages/personal/Drafts.vue';
+import MainContent from './pages/personal/MainContent.vue';
 
-export default {
-    data() {
-        return {
-            text: "This is personal page.",
-            search: ""
-        };
-    },
-    components: { WriteArticle, RightHeader, Drafts, MainContent }
-}
+
+
 
 
 
@@ -74,7 +62,6 @@ export default {
 #personal {
     display: flex;
     justify-content: space-between;
-    background-color: rgb(52, 53, 53, 0.15);
     width: 100%;
     height: 100%;
 }
@@ -93,7 +80,7 @@ export default {
     height: 20%;
     width: 100%;
     display: flex;
-    background-color: rgb(33, 29, 29);
+    /* background-color: rgb(33, 29, 29); */
 }
 
 #main_content_nav {
@@ -107,6 +94,8 @@ export default {
     width: 100%;
     height: 85%;
     background-color: rgb(24, 22, 22, 0.1);
+    text-align: center;
+    
 }
 
 .el-col {
@@ -114,6 +103,8 @@ export default {
     align-items: center;
     text-align: center;
     padding-top: 2%;
+    color: aliceblue;
+    font-weight: bolder;
 }
 
 #search {
@@ -125,7 +116,7 @@ export default {
     background-color: rgb(82, 81, 81, 0.5);
 }
 #r_content{
-    background-color: rgb(56, 45, 45, 0.3);
+    /* background-color: rgb(56, 45, 45, 0.3); */
     width: 100%;
     height: 80%;
 }

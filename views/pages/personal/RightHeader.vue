@@ -36,7 +36,7 @@ export default {
 }
 
 .avatar_box img {
-    height: 100%;
+    width: 100%;
     border-radius: 25px;
 }
 
