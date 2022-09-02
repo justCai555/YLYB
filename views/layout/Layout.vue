@@ -184,6 +184,10 @@ const logout = () => {
 </script>
 
 <style>
+.el-menu{
+    /* opacity: 100%; */
+    background-color: #64868700;
+}
 .el-container {
     height: 100vh;
     overflow: hidden;
